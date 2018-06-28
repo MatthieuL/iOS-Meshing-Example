@@ -11,10 +11,15 @@ import MultipeerConnectivity
 
 enum DataType: UInt32 {
     case string = 1
+    case image = 2
 }
 
 class ViewController: UIViewController, MultiPeerDelegate {
 
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var receivedDataLabel: UILabel!
+    @IBOutlet weak var connectedDevicesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +37,7 @@ class ViewController: UIViewController, MultiPeerDelegate {
         case DataType.string.rawValue:
             let string = data.convert() as! String
             // do something with the received string
+            receivedDataLabel.text = receivedDataLabel.text ?? "" + string
             break;
             
         case DataType.image.rawValue:
@@ -45,6 +51,10 @@ class ViewController: UIViewController, MultiPeerDelegate {
     }
     
     func multiPeer(connectedDevicesChanged devices: [String]) {
+        connectedDevicesLabel.text = ""
+        for deviceName in devices {
+            connectedDevicesLabel.text = connectedDevicesLabel.text ?? "" + deviceName + "\n"
+        }
     }
 }
 
