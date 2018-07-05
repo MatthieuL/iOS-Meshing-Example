@@ -38,7 +38,7 @@
 //
 //  DataExtension.swift
 //
-//  Created by Mostafa Berg on 07/11/2016.
+//  Created by Matthieu LEFEBVRE on 07/11/2016.
 //  Reference from : http://stackoverflow.com/questions/38023838/round-trip-swift-number-types-to-from-data
 //
 //

@@ -39,7 +39,7 @@
 //
 //  ThingyDFUController.swift
 //
-//  Created by Mostafa Berg on 01/11/2016.
+//  Created by Matthieu LEFEBVRE on 01/11/2016.
 //
 //
 

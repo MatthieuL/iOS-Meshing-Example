@@ -38,7 +38,7 @@
 //
 //  ThingyEnvironmentService.swift
 //
-//  Created by Mostafa Berg on 25/10/16.
+//  Created by Matthieu LEFEBVRE on 05/07/2018.
 //
 
 import CoreBluetooth

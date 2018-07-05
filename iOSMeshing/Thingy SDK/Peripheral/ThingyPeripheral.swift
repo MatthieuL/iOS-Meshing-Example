@@ -38,7 +38,7 @@
 //
 //  ThingyPeripheral.swift
 //
-//  Created by Mostafa Berg on 05/10/16.
+//  Created by Matthieu LEFEBVRE on 05/10/16.
 //
 //
 

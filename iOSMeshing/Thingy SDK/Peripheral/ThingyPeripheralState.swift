@@ -38,7 +38,7 @@
 //
 //  ThingyPeripheralState.swift
 //
-//  Created by Mostafa Berg on 10/10/16.
+//  Created by Matthieu LEFEBVRE on 10/10/16.
 //
 //
 

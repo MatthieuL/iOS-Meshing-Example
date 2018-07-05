@@ -38,7 +38,7 @@
 //
 //  ThingyMotionService.swift
 //
-//  Created by Mostafa Berg on 02/11/2016.
+//  Created by Matthieu LEFEBVRE on 05/07/2018.
 //
 
 import UIKit

@@ -38,7 +38,7 @@
 //
 //  ThingyBatteryService.swift
 //
-//  Created by Mostafa Berg on 18/09/17.
+//  Created by Matthieu LEFEBVRE on 05/07/2018.
 //
 
 import CoreBluetooth

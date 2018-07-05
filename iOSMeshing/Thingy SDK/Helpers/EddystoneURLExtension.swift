@@ -38,7 +38,7 @@
 //
 //  URLExtension.swift
 //
-//  Created by Mostafa Berg on 11/10/16.
+//  Created by Matthieu LEFEBVRE on 11/10/16.
 //
 //
 

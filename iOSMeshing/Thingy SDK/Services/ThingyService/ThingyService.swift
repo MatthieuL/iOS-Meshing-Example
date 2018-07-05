@@ -38,7 +38,7 @@
 //
 //  ThingyService.swift
 //
-//  Created by Mostafa Berg on 07/10/16.
+//  Created by Matthieu LEFEBVRE on 05/07/2018.
 //
 //
 
