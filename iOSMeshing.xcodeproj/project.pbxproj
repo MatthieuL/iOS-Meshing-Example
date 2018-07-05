@@ -15,6 +15,26 @@
 		B05E209420DE8DF200D62C23 /* iOSMeshingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E209320DE8DF200D62C23 /* iOSMeshingTests.swift */; };
 		B05E209F20DE8DF200D62C23 /* iOSMeshingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E209E20DE8DF200D62C23 /* iOSMeshingUITests.swift */; };
 		B05E20AD20E568DD00D62C23 /* Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20AC20E568DD00D62C23 /* Multipeer.swift */; };
+		B05E20D320EE95EB00D62C23 /* EddystoneURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B220EE95EA00D62C23 /* EddystoneURLExtension.swift */; };
+		B05E20D420EE95EB00D62C23 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B320EE95EA00D62C23 /* DataExtension.swift */; };
+		B05E20D520EE95EB00D62C23 /* ThingyUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B420EE95EA00D62C23 /* ThingyUUIDs.swift */; };
+		B05E20D620EE95EB00D62C23 /* ThingyDFUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B620EE95EA00D62C23 /* ThingyDFUController.swift */; };
+		B05E20D720EE95EB00D62C23 /* ThingyDFUDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B720EE95EA00D62C23 /* ThingyDFUDelegate.swift */; };
+		B05E20D820EE95EB00D62C23 /* ThingyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20B920EE95EB00D62C23 /* ThingyManager.swift */; };
+		B05E20D920EE95EB00D62C23 /* ThingyManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20BA20EE95EB00D62C23 /* ThingyManagerDelegate.swift */; };
+		B05E20DA20EE95EB00D62C23 /* ThingyManagerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20BB20EE95EB00D62C23 /* ThingyManagerState.swift */; };
+		B05E20DB20EE95EB00D62C23 /* ThingyJumpToBootloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20BE20EE95EB00D62C23 /* ThingyJumpToBootloaderService.swift */; };
+		B05E20DC20EE95EB00D62C23 /* ThingyConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20C020EE95EB00D62C23 /* ThingyConfigurationService.swift */; };
+		B05E20DD20EE95EB00D62C23 /* ThingyBatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20C220EE95EB00D62C23 /* ThingyBatteryService.swift */; };
+		B05E20DE20EE95EB00D62C23 /* ThingyEnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20C420EE95EB00D62C23 /* ThingyEnvironmentService.swift */; };
+		B05E20DF20EE95EB00D62C23 /* ThingyUserInterfaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20C620EE95EB00D62C23 /* ThingyUserInterfaceService.swift */; };
+		B05E20E020EE95EB00D62C23 /* ThingyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20C820EE95EB00D62C23 /* ThingyService.swift */; };
+		B05E20E120EE95EB00D62C23 /* ThingyCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20CA20EE95EB00D62C23 /* ThingyCharacteristic.swift */; };
+		B05E20E220EE95EB00D62C23 /* ThingySoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20CC20EE95EB00D62C23 /* ThingySoundService.swift */; };
+		B05E20E320EE95EB00D62C23 /* ThingyMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20CE20EE95EB00D62C23 /* ThingyMotionService.swift */; };
+		B05E20E420EE95EB00D62C23 /* ThingyPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20D020EE95EB00D62C23 /* ThingyPeripheralDelegate.swift */; };
+		B05E20E520EE95EB00D62C23 /* ThingyPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20D120EE95EB00D62C23 /* ThingyPeripheral.swift */; };
+		B05E20E620EE95EB00D62C23 /* ThingyPeripheralState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05E20D220EE95EB00D62C23 /* ThingyPeripheralState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +69,26 @@
 		B05E209E20DE8DF200D62C23 /* iOSMeshingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMeshingUITests.swift; sourceTree = "<group>"; };
 		B05E20A020DE8DF200D62C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B05E20AC20E568DD00D62C23 /* Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer.swift; sourceTree = "<group>"; };
+		B05E20B220EE95EA00D62C23 /* EddystoneURLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EddystoneURLExtension.swift; sourceTree = "<group>"; };
+		B05E20B320EE95EA00D62C23 /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		B05E20B420EE95EA00D62C23 /* ThingyUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyUUIDs.swift; sourceTree = "<group>"; };
+		B05E20B620EE95EA00D62C23 /* ThingyDFUController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyDFUController.swift; sourceTree = "<group>"; };
+		B05E20B720EE95EA00D62C23 /* ThingyDFUDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyDFUDelegate.swift; sourceTree = "<group>"; };
+		B05E20B920EE95EB00D62C23 /* ThingyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyManager.swift; sourceTree = "<group>"; };
+		B05E20BA20EE95EB00D62C23 /* ThingyManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyManagerDelegate.swift; sourceTree = "<group>"; };
+		B05E20BB20EE95EB00D62C23 /* ThingyManagerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyManagerState.swift; sourceTree = "<group>"; };
+		B05E20BE20EE95EB00D62C23 /* ThingyJumpToBootloaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyJumpToBootloaderService.swift; sourceTree = "<group>"; };
+		B05E20C020EE95EB00D62C23 /* ThingyConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyConfigurationService.swift; sourceTree = "<group>"; };
+		B05E20C220EE95EB00D62C23 /* ThingyBatteryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyBatteryService.swift; sourceTree = "<group>"; };
+		B05E20C420EE95EB00D62C23 /* ThingyEnvironmentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyEnvironmentService.swift; sourceTree = "<group>"; };
+		B05E20C620EE95EB00D62C23 /* ThingyUserInterfaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyUserInterfaceService.swift; sourceTree = "<group>"; };
+		B05E20C820EE95EB00D62C23 /* ThingyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyService.swift; sourceTree = "<group>"; };
+		B05E20CA20EE95EB00D62C23 /* ThingyCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyCharacteristic.swift; sourceTree = "<group>"; };
+		B05E20CC20EE95EB00D62C23 /* ThingySoundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingySoundService.swift; sourceTree = "<group>"; };
+		B05E20CE20EE95EB00D62C23 /* ThingyMotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyMotionService.swift; sourceTree = "<group>"; };
+		B05E20D020EE95EB00D62C23 /* ThingyPeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyPeripheralDelegate.swift; sourceTree = "<group>"; };
+		B05E20D120EE95EB00D62C23 /* ThingyPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyPeripheral.swift; sourceTree = "<group>"; };
+		B05E20D220EE95EB00D62C23 /* ThingyPeripheralState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyPeripheralState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +139,7 @@
 		B05E207D20DE8DEE00D62C23 /* iOSMeshing */ = {
 			isa = PBXGroup;
 			children = (
+				B05E20AE20EE94F000D62C23 /* Thingy SDK */,
 				B05E207E20DE8DEE00D62C23 /* AppDelegate.swift */,
 				B05E208020DE8DEE00D62C23 /* ViewController.swift */,
 				B05E208220DE8DEE00D62C23 /* Main.storyboard */,
@@ -126,6 +167,145 @@
 				B05E20A020DE8DF200D62C23 /* Info.plist */,
 			);
 			path = iOSMeshingUITests;
+			sourceTree = "<group>";
+		};
+		B05E20AE20EE94F000D62C23 /* Thingy SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20B520EE95EA00D62C23 /* DFU */,
+				B05E20B120EE95EA00D62C23 /* Helpers */,
+				B05E20B820EE95EB00D62C23 /* Manager */,
+				B05E20CF20EE95EB00D62C23 /* Peripheral */,
+				B05E20BC20EE95EB00D62C23 /* Services */,
+			);
+			path = "Thingy SDK";
+			sourceTree = "<group>";
+		};
+		B05E20B120EE95EA00D62C23 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20B220EE95EA00D62C23 /* EddystoneURLExtension.swift */,
+				B05E20B320EE95EA00D62C23 /* DataExtension.swift */,
+				B05E20B420EE95EA00D62C23 /* ThingyUUIDs.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B05E20B520EE95EA00D62C23 /* DFU */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20B620EE95EA00D62C23 /* ThingyDFUController.swift */,
+				B05E20B720EE95EA00D62C23 /* ThingyDFUDelegate.swift */,
+			);
+			path = DFU;
+			sourceTree = "<group>";
+		};
+		B05E20B820EE95EB00D62C23 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20B920EE95EB00D62C23 /* ThingyManager.swift */,
+				B05E20BA20EE95EB00D62C23 /* ThingyManagerDelegate.swift */,
+				B05E20BB20EE95EB00D62C23 /* ThingyManagerState.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B05E20BC20EE95EB00D62C23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20BD20EE95EB00D62C23 /* JumpToBootloaderService */,
+				B05E20BF20EE95EB00D62C23 /* ConfigurationService */,
+				B05E20C120EE95EB00D62C23 /* BatteryService */,
+				B05E20C320EE95EB00D62C23 /* EnvironmentService */,
+				B05E20C520EE95EB00D62C23 /* UIService */,
+				B05E20C720EE95EB00D62C23 /* ThingyService */,
+				B05E20CB20EE95EB00D62C23 /* SoundService */,
+				B05E20CD20EE95EB00D62C23 /* MotionService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B05E20BD20EE95EB00D62C23 /* JumpToBootloaderService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20BE20EE95EB00D62C23 /* ThingyJumpToBootloaderService.swift */,
+			);
+			path = JumpToBootloaderService;
+			sourceTree = "<group>";
+		};
+		B05E20BF20EE95EB00D62C23 /* ConfigurationService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20C020EE95EB00D62C23 /* ThingyConfigurationService.swift */,
+			);
+			path = ConfigurationService;
+			sourceTree = "<group>";
+		};
+		B05E20C120EE95EB00D62C23 /* BatteryService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20C220EE95EB00D62C23 /* ThingyBatteryService.swift */,
+			);
+			path = BatteryService;
+			sourceTree = "<group>";
+		};
+		B05E20C320EE95EB00D62C23 /* EnvironmentService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20C420EE95EB00D62C23 /* ThingyEnvironmentService.swift */,
+			);
+			path = EnvironmentService;
+			sourceTree = "<group>";
+		};
+		B05E20C520EE95EB00D62C23 /* UIService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20C620EE95EB00D62C23 /* ThingyUserInterfaceService.swift */,
+			);
+			path = UIService;
+			sourceTree = "<group>";
+		};
+		B05E20C720EE95EB00D62C23 /* ThingyService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20C820EE95EB00D62C23 /* ThingyService.swift */,
+				B05E20C920EE95EB00D62C23 /* Characteristics */,
+			);
+			path = ThingyService;
+			sourceTree = "<group>";
+		};
+		B05E20C920EE95EB00D62C23 /* Characteristics */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20CA20EE95EB00D62C23 /* ThingyCharacteristic.swift */,
+			);
+			path = Characteristics;
+			sourceTree = "<group>";
+		};
+		B05E20CB20EE95EB00D62C23 /* SoundService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20CC20EE95EB00D62C23 /* ThingySoundService.swift */,
+			);
+			path = SoundService;
+			sourceTree = "<group>";
+		};
+		B05E20CD20EE95EB00D62C23 /* MotionService */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20CE20EE95EB00D62C23 /* ThingyMotionService.swift */,
+			);
+			path = MotionService;
+			sourceTree = "<group>";
+		};
+		B05E20CF20EE95EB00D62C23 /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20D020EE95EB00D62C23 /* ThingyPeripheralDelegate.swift */,
+				B05E20D120EE95EB00D62C23 /* ThingyPeripheral.swift */,
+				B05E20D220EE95EB00D62C23 /* ThingyPeripheralState.swift */,
+			);
+			path = Peripheral;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +440,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05E208120DE8DEE00D62C23 /* ViewController.swift in Sources */,
+				B05E20D320EE95EB00D62C23 /* EddystoneURLExtension.swift in Sources */,
+				B05E20E520EE95EB00D62C23 /* ThingyPeripheral.swift in Sources */,
+				B05E20E320EE95EB00D62C23 /* ThingyMotionService.swift in Sources */,
+				B05E20E620EE95EB00D62C23 /* ThingyPeripheralState.swift in Sources */,
+				B05E20DD20EE95EB00D62C23 /* ThingyBatteryService.swift in Sources */,
 				B05E207F20DE8DEE00D62C23 /* AppDelegate.swift in Sources */,
+				B05E20E220EE95EB00D62C23 /* ThingySoundService.swift in Sources */,
+				B05E20DC20EE95EB00D62C23 /* ThingyConfigurationService.swift in Sources */,
+				B05E20E120EE95EB00D62C23 /* ThingyCharacteristic.swift in Sources */,
+				B05E20D520EE95EB00D62C23 /* ThingyUUIDs.swift in Sources */,
+				B05E20DA20EE95EB00D62C23 /* ThingyManagerState.swift in Sources */,
+				B05E20D820EE95EB00D62C23 /* ThingyManager.swift in Sources */,
+				B05E20E420EE95EB00D62C23 /* ThingyPeripheralDelegate.swift in Sources */,
 				B05E20AD20E568DD00D62C23 /* Multipeer.swift in Sources */,
+				B05E20D420EE95EB00D62C23 /* DataExtension.swift in Sources */,
+				B05E20DB20EE95EB00D62C23 /* ThingyJumpToBootloaderService.swift in Sources */,
+				B05E20D620EE95EB00D62C23 /* ThingyDFUController.swift in Sources */,
+				B05E20D720EE95EB00D62C23 /* ThingyDFUDelegate.swift in Sources */,
+				B05E20DE20EE95EB00D62C23 /* ThingyEnvironmentService.swift in Sources */,
+				B05E20E020EE95EB00D62C23 /* ThingyService.swift in Sources */,
+				B05E20DF20EE95EB00D62C23 /* ThingyUserInterfaceService.swift in Sources */,
+				B05E20D920EE95EB00D62C23 /* ThingyManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
