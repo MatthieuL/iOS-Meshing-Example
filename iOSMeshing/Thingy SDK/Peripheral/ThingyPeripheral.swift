@@ -42,7 +42,9 @@
 //
 //
 
+import Foundation
 import CoreBluetooth
+import UIKit
 
 public typealias CompletionCallback = (Bool) -> (Void)
 public typealias ValueCallback      = (Data) -> (Void)

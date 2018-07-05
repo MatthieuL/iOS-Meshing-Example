@@ -1,0 +1,6 @@
+framework module Pods_iOSMeshing {
+  umbrella header "Pods-iOSMeshing-umbrella.h"
+
+  export *
+  module * { export * }
+}
