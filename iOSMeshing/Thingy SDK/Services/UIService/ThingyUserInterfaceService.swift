@@ -41,7 +41,9 @@
 //  Created by Matthieu LEFEBVRE on 05/07/2018.
 //
 
+import Foundation
 import CoreBluetooth
+import UIKit
 
 public typealias ButtonNotificationCallback = (_ state: ThingyButtonState) -> (Void)
 

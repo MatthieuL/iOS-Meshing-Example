@@ -42,6 +42,8 @@
 //
 //
 
+import Foundation
+
 extension URL {
     public static let eddystoneUrlSchemes = ["http://www.", "https://www.", "http://", "https://"]
     internal static let eddystoneExtensions = [".com/", ".org/", ".edu/", ".net/", ".info/", ".biz/", ".gov/", ".com", ".org", ".edu", ".net", ".info", ".biz", ".gov"]
