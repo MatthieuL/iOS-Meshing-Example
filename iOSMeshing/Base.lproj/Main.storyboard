@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,15 +38,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFd-WQ-HRU">
+                                <rect key="frame" x="140.5" y="375" width="93" height="30"/>
+                                <state key="normal" title="Scan Thingys"/>
+                                <connections>
+                                    <action selector="scanThingys" destination="BYZ-38-t0r" eventType="touchUpInside" id="Np2-Nn-YEk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qKl-vQ-MP8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2ob-Kg-weI"/>
+                            <constraint firstItem="YFd-WQ-HRU" firstAttribute="top" secondItem="UJi-78-uiD" secondAttribute="bottom" constant="8" id="8hH-WF-Ryn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nzk-fN-lm7" secondAttribute="trailing" constant="30" id="ElK-vk-KNj"/>
                             <constraint firstItem="UJi-78-uiD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Mdt-xT-n8F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UJi-78-uiD" secondAttribute="bottom" constant="300" id="Okl-pw-krz"/>
                             <constraint firstItem="UJi-78-uiD" firstAttribute="top" secondItem="Nzk-fN-lm7" secondAttribute="bottom" constant="10" id="PsN-A4-ePT"/>
                             <constraint firstItem="Nzk-fN-lm7" firstAttribute="top" secondItem="qKl-vQ-MP8" secondAttribute="bottom" constant="10" id="QG8-ln-elz"/>
+                            <constraint firstItem="YFd-WQ-HRU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPU-53-IgW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UJi-78-uiD" secondAttribute="trailing" constant="30" id="ev0-aG-KM6"/>
                             <constraint firstItem="Nzk-fN-lm7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pdj-eY-acO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qKl-vQ-MP8" secondAttribute="trailing" constant="30" id="pre-WF-Eef"/>
