@@ -179,6 +179,7 @@
 		B05E207D20DE8DEE00D62C23 /* iOSMeshing */ = {
 			isa = PBXGroup;
 			children = (
+				B05E20E920F3E5C000D62C23 /* MultiPeer */,
 				B05E20AE20EE94F000D62C23 /* Thingy SDK */,
 				B05E207E20DE8DEE00D62C23 /* AppDelegate.swift */,
 				B05E208020DE8DEE00D62C23 /* ViewController.swift */,
@@ -186,7 +187,6 @@
 				B05E208520DE8DF200D62C23 /* Assets.xcassets */,
 				B05E208720DE8DF200D62C23 /* LaunchScreen.storyboard */,
 				B05E208A20DE8DF200D62C23 /* Info.plist */,
-				B05E20AC20E568DD00D62C23 /* Multipeer.swift */,
 			);
 			path = iOSMeshing;
 			sourceTree = "<group>";
@@ -346,6 +346,14 @@
 				B05E20D220EE95EB00D62C23 /* ThingyPeripheralState.swift */,
 			);
 			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		B05E20E920F3E5C000D62C23 /* MultiPeer */ = {
+			isa = PBXGroup;
+			children = (
+				B05E20AC20E568DD00D62C23 /* Multipeer.swift */,
+			);
+			path = MultiPeer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,7 +767,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3982LX8FN;
 				INFOPLIST_FILE = iOSMeshing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -779,7 +787,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3982LX8FN;
 				INFOPLIST_FILE = iOSMeshing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
