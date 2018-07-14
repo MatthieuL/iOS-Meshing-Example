@@ -23,6 +23,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     private var scanner: NFCReaderSession?
     private var thingyManager: ThingyManager?
+    private var connectedIOSDevicesNames: [String] = [] {
+        didSet {
+            var resultString = ""
+            for s in connectedIOSDevicesNames {
+                resultString += s + "\n"
+            }
+            for p in targetPeripherals {
+                resultString += p.name + "\n"
+            }
+            DispatchQueue.main.async {
+                self.connectedDevicesLabel.text = resultString
+            }
+        }
+    }
     private var targetPeripherals: [ThingyPeripheral] = [] {
         didSet {
             // When a new peripheral has been added, set it as a current one and update its state
@@ -30,6 +44,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 p.delegate = self
                 p.discoverServices()
                 p.state = .connected
+            }
+            
+            // Update display
+            
+            var resultString = ""
+            for s in connectedIOSDevicesNames {
+                resultString += s + "\n"
+            }
+            for p in targetPeripherals {
+                resultString += p.name + "\n"
+            }
+            DispatchQueue.main.async {
+                self.connectedDevicesLabel.text = resultString
             }
         }
     }
@@ -70,8 +97,6 @@ extension ViewController: ThingyManagerDelegate, ThingyPeripheralDelegate, NFCND
     }
     
     func startNFCScan() {
-//        statusLabel.text = nil
-//        beginAnimation()
         scanner = NFCNDEFReaderSession(delegate: self as! NFCNDEFReaderSessionDelegate, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
         scanner!.alertMessage = "Touch your Thingy:52"
         scanner!.begin()
@@ -144,6 +169,7 @@ extension ViewController: MultiPeerDelegate {
             let string = data.convert() as! String
             // do something with the received string
             print("received \(string)")
+            parseStringForThingy(string)
             DispatchQueue.main.async {
                 self.receivedDataLabel.text = string
             }
@@ -162,17 +188,19 @@ extension ViewController: MultiPeerDelegate {
     func multiPeer(connectedDevicesChanged devices: [String]) {
         print("Connected to: \(devices)")
         connectedDevicesLabel.text = ""
-        for deviceName in devices {
-            DispatchQueue.main.async {
-                self.connectedDevicesLabel.text = deviceName
-            }
-        }
+        connectedIOSDevicesNames = devices
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("should return \(textField.text)")
         MultiPeer.instance.send(object: textField.text ?? "zut", type: DataType.string.rawValue)
-        if textField.text == "breath" {
+        parseStringForThingy(textField.text ?? "")
+        
+        return true
+    }
+    
+    func parseStringForThingy(_ value: String) {
+        if value == "red" {
             for targetPeripheral in targetPeripherals {
                 print()
                 print(targetPeripheral.readLEDState())
@@ -181,9 +209,52 @@ extension ViewController: MultiPeerDelegate {
                     print("Constant LED on \(success) with color: \(UIColor.red)")
                 }, andColor: .red)
             }
+        } else if value == "blue" {
+                for targetPeripheral in targetPeripherals {
+                    print()
+                    print(targetPeripheral.readLEDState())
+                    print("\(targetPeripheral.state))")
+                    targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
+                        print("Constant LED on \(success) with color: \(UIColor.red)")
+                    }, andColor: .blue)
+                }
+        } else if value == "purple" {
+            for targetPeripheral in targetPeripherals {
+                print()
+                print(targetPeripheral.readLEDState())
+                print("\(targetPeripheral.state))")
+                targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
+                    print("Constant LED on \(success) with color: \(UIColor.red)")
+                }, andColor: .purple)
+            }
+        } else if value == "white" {
+            for targetPeripheral in targetPeripherals {
+                print()
+                print(targetPeripheral.readLEDState())
+                print("\(targetPeripheral.state))")
+                targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
+                    print("Constant LED on \(success) with color: \(UIColor.red)")
+                }, andColor: .white)
+            }
+        } else if value == "yellow" {
+            for targetPeripheral in targetPeripherals {
+                print()
+                print(targetPeripheral.readLEDState())
+                print("\(targetPeripheral.state))")
+                targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
+                    print("Constant LED on \(success) with color: \(UIColor.red)")
+                }, andColor: .yellow)
+            }
+        } else {
+            for targetPeripheral in targetPeripherals {
+                print()
+                print(targetPeripheral.readLEDState())
+                print("\(targetPeripheral.state))")
+                targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
+                    print("Constant LED on \(success) with color: \(UIColor.red)")
+                }, andColor: .cyan)
+            }
         }
-        
-        return true
     }
     
     @IBAction func scanThingys() {
