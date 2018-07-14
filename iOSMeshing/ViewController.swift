@@ -252,7 +252,7 @@ extension ViewController: MultiPeerDelegate {
                 print("\(targetPeripheral.state))")
                 targetPeripheral.turnOnConstantLED(withCompletionHandler: { (success) -> (Void) in
                     print("Constant LED on \(success) with color: \(UIColor.red)")
-                }, andColor: .cyan)
+                }, andColor: .blue)
             }
         }
     }
